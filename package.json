@@ -1,0 +1,29 @@
+{
+    "name": "astro-mdx-code-blocks",
+    "version": "0.0.1",
+    "type": "module",
+    "types": "./dist/index.d.ts",
+    "license": "MIT",
+    "repository": {},
+    "bugs": "",
+    "exports": {
+        ".": "./dist/index.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch"
+    },
+    "keywords": [
+        "mdx-code-blocks"
+    ],
+    "devDependencies": {
+        "mdast-util-mdx-jsx": "^2.1.2",
+        "unist-util-visit": "^4.1.2"
+    },
+    "peerDependencies": {
+        "astro": "^2.0.11"
+    }
+}
