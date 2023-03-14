@@ -2,10 +2,14 @@
     "name": "astro-mdx-code-blocks",
     "version": "0.0.1",
     "type": "module",
+    "description": "An easy way to customize the syntax highlighting of MDX fenced code blocks by providing your own Astro component.",
     "types": "./dist/index.d.ts",
     "license": "MIT",
-    "repository": {},
-    "bugs": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/johnzanussi/astro-mdx-code-blocks.git"
+    },
+    "bugs": "https://github.com/johnzanussi/astro-mdx-code-blocks/issues",
     "exports": {
         ".": "./dist/index.js"
     },
