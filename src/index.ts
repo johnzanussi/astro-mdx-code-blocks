@@ -1,5 +1,12 @@
 import type { AstroIntegration } from 'astro';
-import makeRemarkCodeBlocks from './remarkCodeBlock';
+import makeRemarkCodeBlocks from './remarkCodeBlock.js';
+
+export declare type CodeBlockProps = {
+    code: string;
+    lang?: string;
+    filename?: string;
+    foo: string;
+};
 
 const CodeBlockTagName = 'AutoImportedCodeBlock';
 

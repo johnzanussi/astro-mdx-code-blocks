@@ -3,11 +3,11 @@ import type { Code } from 'mdast';
 import type { Transformer } from 'unified';
 import type { MdxJsxFlowElement, MdxJsxAttribute } from 'mdast-util-mdx-jsx';
 
-export type MetaAttributes = {
+type MetaAttributes = {
     [key: string]: string | boolean;
 };
 
-export type CodeBlocksOptions = {
+type CodeBlocksOptions = {
     tagName: string;
 };
 

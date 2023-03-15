@@ -1,29 +1,10 @@
 # 🚀 Astro MDX Code Blocks
 
-Use a custom Astro component to render code snippets in your MDX files.
+Use a custom Astro component to render and syntax highlight code snippets in your MDX files.
 
 ## Demo
 
-```mdx
-// src/posts/my-first-post.mdx
----
-title: A post with fenced code blocks
----
-
-This is an example of a custom badge component.
-
-```astro
-/// src/components/Badge.astro
----
-type Props = {
-    color: 'blue' | 'red';
-}
-const { title, color } = Astro.props;
----
-<span class:list={['badge', `badge-${color}`]}>
-    {title}
-</span>
-```
+asdf
 
 ## Installation
 
@@ -89,7 +70,7 @@ type CodeBlockProps = {
 ```
 
 ```ts
-import type CodeBlockProps from 'astro-mdx-code-blocks/component';
+import type { CodeBlockProps } from 'astro-mdx-code-blocks';
 ```
 
 
