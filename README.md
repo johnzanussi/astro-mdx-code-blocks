@@ -4,16 +4,16 @@ Use a custom Astro component to render and syntax highlight code snippets in you
 
 ## Demo
 
-asdf
+View a demo of the integration in action on [StackBlitz](https://stackblitz.com/edit/astro-mdx-code-blocks-example?file=src%2Fpages%2Findex.mdx,astro.config.mjs,src%2Fcomponents%2FCodeBlock.astro).
 
 ## Installation
 
 Due to the extra configuration needed this integration needs to be manually installed.
 
-> This integration depends on the [`AutoImport`](https://github.com/delucis/astro-auto-import) and [`mdx`](https://docs.astro.build/en/guides/integrations-guide/mdx/) integrations.
+> This integration depends on the [`AutoImport`](https://github.com/delucis/astro-auto-import) and [`@astrojs/mdx`](https://docs.astro.build/en/guides/integrations-guide/mdx/) integrations.
 
 ```bash
-npm install -D astro-mdx-code-blocks astro-auto-import mdx
+npm install -D astro-mdx-code-blocks astro-auto-import @astrojs/mdx
 ```
 
 ## Configuration
@@ -87,30 +87,27 @@ const {
     filename,
 } = Astro.props;
 
-const showHeader = lang || filename;
+const hasLang = !!lang;
+const hasFileName = !!filename;
+
+const showHeader = hasLang || hasFileName;
 ---
 
 <figure class="code-block">
 
     {showHeader && (
         <figcaption class="header">
-            {title && (
-                <span class="title">
-                    {title}
+            {hasFileName && (
+                <span class="filename">
+                    {filename}
                 </span>
             )}
-            {lang && (
+            {hasLang && (
                 <span class="lang">
                     {lang}
                 </span>
             )}
         </figcaption>
-    )}
-
-    {!!lang && (
-        <div class="code-language">
-            {lang}
-        </div>
     )}
 
     <Prism
