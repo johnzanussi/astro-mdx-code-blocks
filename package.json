@@ -22,6 +22,8 @@
         "dev": "tsc --watch"
     },
     "keywords": [
+        "withastro",
+        "ui",
         "mdx-code-blocks"
     ],
     "devDependencies": {
