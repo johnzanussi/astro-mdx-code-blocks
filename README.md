@@ -48,8 +48,11 @@ import type { CodeBlockProps } from 'astro-mdx-code-blocks';
 
 ### Example Component
 
+> This example uses Astro's [Prism component](https://docs.astro.build/en/reference/api-reference/#prism-) for syntax highlighting. However, you can use any library you'd like as the component has access to the raw `code` string.
+
+`src/components/CodeBlock.astro`
+
 ```astro
-// src/components/CodeBlock.astro
 ---
 import { Prism } from '@astrojs/prism';
 
