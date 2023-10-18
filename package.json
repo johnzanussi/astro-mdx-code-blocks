@@ -1,6 +1,6 @@
 {
     "name": "astro-mdx-code-blocks",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "type": "module",
     "author": "John Zanussi <johnzanussi@gmail.com> (https://johnzanussi.com/)",
     "description": "An easy way to customize the syntax highlighting of MDX fenced code blocks by providing your own Astro component.",
@@ -31,6 +31,6 @@
         "unist-util-visit": "^4.1.2"
     },
     "peerDependencies": {
-        "astro": "^2.0.11"
+        "astro": ">=2.0.11"
     }
 }
