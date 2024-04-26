@@ -44,7 +44,14 @@ export default function makeRemarkCodeBlocks({ tagName }: CodeBlocksOptions) {
                             );
                         }
                         const props = {
-                            code: node.value,
+                            code: node.value.replace(
+                                /\r?\n/g,
+                                (match: string) => {
+                                    return match === '\n'
+                                        ? '\\n'
+                                        : '\\r\\n';
+                                }
+                            ),
                             lang,
                             ...metaAttributes,
                         };
