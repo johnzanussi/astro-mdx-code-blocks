@@ -1,5 +1,11 @@
 # 🚀 Astro MDX Code Blocks
 
+> [!CAUTION]
+>
+> ## Deprecated
+> This repository is no longer maintained, as Astro has released a more robust solution for rendering code blocks: [Expressive Code](https://expressive-code.com/)
+>
+
 Use a custom Astro component to render and syntax highlight code snippets in your MDX files.
 
 ## Demo
